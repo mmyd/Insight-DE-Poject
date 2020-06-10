@@ -6,3 +6,5 @@ A knowledge graph of package dependency
 - A junior engineer try to install a tool but they are too much packages and version issue. He has no idea to how to do without clearly knowing the package dependencies.
 
 ## Architecture
+![Alt text](https://github.com/mmyd/insight/blob/master/pic.png?raw=true "Optional Title")
+- https://github.com/mmyd/insight/blob/master/pic.png
