@@ -7,4 +7,4 @@ A knowledge graph of package dependency
 
 ## Architecture
 ![Alt text](https://github.com/mmyd/insight/blob/master/pic.png?raw=true "Optional Title")
-- https://github.com/mmyd/insight/blob/master/pic.png
+
