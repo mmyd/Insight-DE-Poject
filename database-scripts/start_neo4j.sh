@@ -1,0 +1,1 @@
+<Neo4j_HOME>/bin/neo4j console
