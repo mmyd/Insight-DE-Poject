@@ -6,4 +6,4 @@
 - Secondly, do the processing, like join the project rdd with repository rdd and aggreate the tag name for each repository.
 - Lastly, do data cleaning and aggregate the statements before writing to the database.
 
-#### Jupyter Notebook show the overview of cleaned data.
+#### Jupyter Notebook shows the overview of cleaned data.
