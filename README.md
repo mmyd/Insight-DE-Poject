@@ -1,5 +1,6 @@
-# Pacakge Master
-A knowledge graph of package dependency
+# Library Compass
+- A knowledge graph of package dependency 
+- Locate the right version library for your project
 
 ## Motivation
 - If a company plans to investigate or design a software, how the researcher can discover demand or opening for OSS market ?  
@@ -19,7 +20,7 @@ A knowledge graph of package dependency
 - Create index on nodes
 - Batch transaction using periodical commit
 ### Result:
-- update a million records with around 2G — 4G per transaction => 10M nodes / relationships with 32G heap per transaction
+- update a million records with around 2G-4G per transaction => 10M nodes / relationships with 32G heap per transaction
 
  
 ## Visualization
