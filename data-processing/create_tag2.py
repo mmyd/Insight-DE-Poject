@@ -15,12 +15,11 @@ if __name__ == "__main__":
     tag_lines = spark.read.text(tags).rdd.map(lambda r: r[0])\
                                          .map(lambda line: line.split(','))
     tag_header = tag_lines.first()
+    # group the tag_name by repository_id using reduceByKey
     lines = tag_lines.filter(lambda x: x!=tag_header)\
             .filter(lambda x:int(x[3])>=30000000)\
                      .map(lambda x:(x[3],[x[4]])).reduceByKey(lambda x,y:x+y).collect()
-
-    #tag_header = tag_lines.first()
-    #tags_lines = tag_lines.filter(lambda x: x!=tag_header)
+                     
     tag_path = os.path.join("tags_out2.csv")
     with open(tag_path, "w", encoding="utf-8") as testFile:
         testFile.write('repository_id,tag_name\n')

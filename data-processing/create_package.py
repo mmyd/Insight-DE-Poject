@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 if __name__ == "__main__":
     spark = SparkSession\
         .builder\
-        .appName("CreateProject")\
+        .appName("CreatePackage")\
         .getOrCreate()
 
     projects = "s3a://insight-de-data/projects.csv"
@@ -15,15 +15,17 @@ if __name__ == "__main__":
                                                  .map(lambda line: line.split(','))\
                                                  .map(lambda x:(x[0],x[1].strip().lower(),x[2],x[7],x[16],x[20]))\
                                                  .collect()
-
+    # Find the repository for the package 
     project_path = os.path.join("project_cleaned.csv")
     count = 0
     with open(project_path, "w", encoding="utf-8") as testFile:
         testFile.write('id,platform,name,homepage_url,language,repository_id\n')
         for l in project_lines:
             v = list(l)
+            # data cleaning for langauge column
             if v[4]== None or v[4]==0 or v[4].strip()=="0" or len(v[4].strip())>15:
                 v[4] = "null"
+            # data cleaning for repository_id(handle missing/unqualified values)
             if v[5] == None or v[5]==0 or v[5].strip()=="0" or not v[5].strip().isdigit():
                 v[5] = "null"
             if count == 0:

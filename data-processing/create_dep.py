@@ -14,9 +14,11 @@ if __name__ == "__main__":
         .getOrCreate()
 
     deps = "s3a://insight-de-data/dependencies.csv"
+    # filter out the unnecessary columns
     rdd = spark.read.text(deps).rdd.map(lambda r: r[0])\
                                    .map(lambda line: line.split(','))\
                                    .map(lambda x:(x[0],x[3],x[4],x[6],x[7],x[8],x[9],x[10],x[11]))
+    # filter out the header
     header = rdd.first()
     dep_lines=rdd.filter(lambda x: x!=header).filter(lambda x:(int(x[1])<=10000 and(x[8]=='' or int(x[8])<=10000))).collect()
 
