@@ -3,8 +3,8 @@
 - Locate the right version library for your project
 
 ## Motivation
-- If a company plans to investigate or design a software, how the researcher can discover demand or opening for OSS market ?  
-- A junior engineer try to install a tool but they are too much packages and version issue. He has no idea to how to do without clearly knowing the package dependencies.
+- If a company plans to invest or design a software, how can researchers discover demand or opening for OSS market ?  
+- A junior engineer tries to install a tool but they are too much packages and version issues. He has no idea to how to do that without clearly knowing the package dependencies.
 
 ## Architecture
 ![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-15%20at%201.54.15%20PM.png?raw=true "Optional Title")
@@ -15,7 +15,7 @@
 ## Challenge
 ### Improve the performance of writing relationship to Neo4j
 ### Solution:
-- Preprocess: Aggregation the statements using Spark
+- Preprocess: Aggregate the statements using Spark
 - Increase heap size
 - Create index on nodes
 - Batch transaction using periodical commit
