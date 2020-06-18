@@ -10,3 +10,6 @@ A knowledge graph of package dependency
 
 ## Data Modeling
 ![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-17%20at%2010.35.54%20PM.png?raw=true "Optional Title")
+
+## Visualization
+![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-17%20at%2010.35.54%20PM.png?raw=true "Optional Title")
