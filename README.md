@@ -8,3 +8,5 @@ A knowledge graph of package dependency
 ## Architecture
 ![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-15%20at%201.54.15%20PM.png?raw=true "Optional Title")
 
+## Data Modeling
+![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-15%20at%201.54.15%20PM.png?raw=true "Optional Title")
