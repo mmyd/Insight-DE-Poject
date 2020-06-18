@@ -1,3 +1,5 @@
-# Ingestion
+## Ingestion
 
-Use this folder to provide code about your data ingestion, if any.
+### provide code about my data ingestion.
+- Upload raw data to s3
+- Upload cleaned data to s3
