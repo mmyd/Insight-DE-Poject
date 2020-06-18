@@ -12,4 +12,4 @@ A knowledge graph of package dependency
 ![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-17%20at%2010.35.54%20PM.png?raw=true "Optional Title")
 
 ## Visualization
-![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/Screen%20Shot%202020-06-17%20at%2010.35.54%20PM.png?raw=true "Optional Title")
+![Alt text](https://github.com/mmyd/Insight-DE-Poject/blob/master/graph%20(1).png?raw=true "Optional Title")
